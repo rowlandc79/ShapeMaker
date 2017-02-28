@@ -46,6 +46,7 @@
     <Compile Include="Textbox.cs" />
     <Compile Include="Square.cs" />
     <Compile Include="Rectangle.cs" />
+    <Compile Include="Utils\Drawing.cs" />
     <Compile Include="Widget.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
