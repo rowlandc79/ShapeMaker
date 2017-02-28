@@ -29,5 +29,19 @@ namespace ShapeTester
             Assert.AreEqual("Ellipse (100,150) diameterH=300 diameterV=200", widget.Print());
         }
 
+        [TestMethod]
+        public void TestBasicShape_Circle()
+        {
+            Widget widget = new Circle(1, 1, 300);
+            Assert.AreEqual("Circle (1,1) size=300", widget.Print());
+        }
+
+        [TestMethod]
+        public void TestBasicShape_Textbox()
+        {
+            Widget widget = new Textbox(5, 5, 200, 100, "sample text");
+            Assert.AreEqual("Textbox (5,5) width=200 height=100 Text=\"sample text\"", widget.Print());
+        }
+
     }
 }
